@@ -13,7 +13,7 @@ export const ResultContextProvider = ({ children }) => {
       method: "GET",
       headers: {
         "x-rapidapi-host": "google-search3.p.rapidapi.com",
-        "x-rapidapi-key": "d106031651mshc2dfb7f583a7307p1b4149jsnaced323c20ac",
+        "x-rapidapi-key": import.meta.env.VITE_API_KEY,
       },
     });
     const data = await response.json();
